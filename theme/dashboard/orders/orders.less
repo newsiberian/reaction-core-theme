@@ -51,15 +51,15 @@
   flex: 0 0 auto;
 }
 
-.order-panel-items .order-detail-title {
+.order-item-details .order-detail-title {
   flex: 1 1 auto;
 }
 
-.order-panel-items .order-detail-quantity {
+.order-item-details .order-detail-quantity {
   flex: 0 0 auto;
 }
 
-.order-panel-items .order-detail-price {
+.order-item-details .order-detail-price {
   flex: 0 0 auto;
 }
 
@@ -126,6 +126,7 @@
 
 .order-item {
   .display(flex);
+  padding: 1rem 0;
 }
 
 .order-item-media {
@@ -151,4 +152,22 @@
 
 .order-shipment-item {
 
+}
+
+// Order form summary
+.order-summary-form-group {
+  .display(flex);
+  .align-items(center);
+
+  > .reason {
+    .flex(1 1 auto);
+    .margin-right(20px);
+    .text-align(right);
+  }
+
+
+  > .amount {
+    .flex(0 0 auto);
+    width: 100px;
+  }
 }
